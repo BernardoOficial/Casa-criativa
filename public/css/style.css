@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+
+body {
+    background-color: #e5e5e5;
+    color: #25282b;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page-ideias.addScroll,
+#body.addScroll {
+    overflow: hidden;
+}
+
+a {
+    color: #ff5e84;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p, .description {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.button {
+    color: white;
+    background-color: #ff5e84;
+    width: 150px;
+    height: 40px;   
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px #ff5e8455;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+a.button:hover {
+    background-color: #0984e3;
+    text-decoration: none;
+}
+
+/* ----- INTRO ----- */
+#container {
+    max-width: 980px;
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+    margin-right: 64px;
+    margin-top: 40px;
+}
+
+main {
+    margin: 32px 0;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #ff5e84;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    transition: 0.5s;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    color: #777;
+}
+
+footer a{
+    opacity: 0.7;
+}
+
+/* ----- LAST-IDEIA ----- */
+.idea {
+    display: flex;
+    margin: 40px 0;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px -8px rgba(0,0,0,0.2);
+    align-items: center;
+}
+
+.idea img {
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+
+.idea h3 {
+    margin: 0;
+}
+
+.idea p {
+    margin: 8px 0;
+}
+
+/* ----- MODAL ----- */
+#modal {
+    background-color: #ff5e84;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+#modal .content {
+    margin: 40px 0;
+    color: #fff;
+}
+
+#modal h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#modal form {
+    max-width: 800px;
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#modal form div:nth-child(3),
+#modal form div:nth-child(4),
+#modal form div:nth-child(5) {
+    grid-column: span 2;
+}
+
+form textarea,
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(141,25,52,0.5);
+    outline: none;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 140px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form button {
+    background: white;
+    width: 150px;
+    height: 40px;
+    margin-top: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    grid-column: 2;
+    justify-self: end;
+}
+
+form button:hover {
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+form a {
+    background-color: #ffffff22;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    align-self: end;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+form a:hover{
+    background-color: #fff;
+    color: #ff5e84;
+    text-decoration: none;
+}
+
+#modal.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Ideias.html */
+#page-ideias #container{
+    display: block;
+}
+
+#page-ideias header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-ideias header nav {
+    display: flex;
+    align-items: center;
+}
+
+#page-ideias header nav li {
+    list-style: none;
+    margin-right: 16px;
+}
+
+#page-ideias header nav li a{
+    color: #25282bdd;
+}
+
+#page-ideias header nav li a.button {
+    color: #fff;
+}
+
+#page-ideias section#title {
+    text-align: center;
+}
+
+#page-ideias section#title p {
+    margin: 0;
+}
+
+#page-ideias section#title h1{
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#page-ideias section#ideias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#page-ideias section#ideias .idea {
+    margin: 0;
+}
+
+#page-ideias header,
+#page-ideias section#ideias,
+#page-ideias section#title,
+#page-ideias footer {
+    margin-top: 50px;
+}

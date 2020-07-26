@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title>Ideias - Casa Criativa</title>
+{% endblock %}
+
+{% block pageIdeias %}
+    <body id="page-ideias">
+{% endblock %}
+
+{% block content %}
+    <header>
+        <a href="/">
+            <img src="./img/logo.png" alt="Logo marca do website">
+        </a>
+        
+        <nav>
+            <li><a href="/">Início</a></li>
+            <li><a href="#" class="button" onclick="onOff()">Nova Ideia</a></li>
+        </nav>
+    </header>
+
+    <section id="title">
+        <p>em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+
+    <section id="ideias">
+        {% include "all_ideas.html" %}
+    </section>
+
+    <footer class="footer">
+        Com ❤️ <a href="https://rocketseat.com.br/starter" target="_blanc">Rocketseat</a> e <a href="https://bernardo-portifolio.netlify.app/" target="_blanc">Bernardo Dev</a>
+    </footer>
+{% endblock %}
+
+

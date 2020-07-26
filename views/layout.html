@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include "head.html" %}
+
+    {% block title %}
+    <title>Casa Criativa</title>
+    {% endblock %}
+</head>
+
+{% block pageIdeias %}
+<body id="body">
+{% endblock %}
+
+    <!-- Página inicial -->
+    <div id="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Modal -->
+    {% include "modal.html" %}
+
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>
